@@ -4,11 +4,13 @@ Keep browsing Reddit in your browser.
 
 A small, open-source Chrome extension that removes the **“Get the best of Reddit in the app”** overlay and releases its page scroll lock. No account setup, tracking, external requests, or runtime dependencies.
 
+**[Download v1.0.1 ZIP](https://github.com/monzaemonnn/reddit-app-nag-blocker/raw/refs/heads/main/downloads/reddit-app-nag-blocker-v1.0.1.zip)** · [Source code](content.js) · [SHA-256 checksum](downloads/SHA256SUMS)
+
 **Status:** early public release candidate. The initial version was reported working by its first user. This is a community workaround for Reddit's changing interface, not an official Reddit product. See [testing status](TEST-RESULTS.md).
 
 ## Install
 
-1. Download the extension ZIP from [GitHub Releases](https://github.com/monzaemonnn/reddit-app-nag-blocker/releases) and unzip it. If using **Code → Download ZIP**, unzip the source archive instead.
+1. Download the ZIP linked above and unzip it. If using **Code → Download ZIP**, unzip the source archive instead.
 2. Keep the extracted folder somewhere permanent: Chrome loads the files from that folder.
 3. Enter `chrome://extensions` in Chrome's address bar.
 4. Turn on **Developer mode** at the top right.
@@ -67,7 +69,7 @@ The browser tests load the actual unpacked extension into a temporary Chromium p
 
 Contributions are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for scope and [PUBLISHING.md](PUBLISHING.md) for the release checklist.
 
-GitHub Actions runs the source checks and browser fixture suite on pushes and pull requests. After checks pass on `main`, a new manifest version is packaged as a pre-release with a ZIP and SHA-256 checksum. Existing releases are never overwritten. The workflow can also be started manually from the Actions tab.
+GitHub Actions is configured to run the source checks and browser fixture suite on pushes and pull requests. Its first job failed before test execution, so browser results remain unverified; see [testing status](TEST-RESULTS.md). After checks pass on `main`, a new manifest version is packaged on GitHub Releases as a pre-release. The direct download above is available independently. Existing releases are never overwritten. The workflow can also be started manually from the Actions tab.
 
 ## License
 
