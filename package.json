@@ -1,0 +1,12 @@
+{
+  "name": "reddit-app-nag-blocker",
+  "version": "1.0.1",
+  "private": true,
+  "description": "Development checks for the Reddit App Nag Blocker Chrome extension",
+  "license": "MIT",
+  "scripts": {
+    "check": "node --check content.js && node --check tests/test-extension.cjs && node scripts/check.cjs",
+    "test": "node tests/test-extension.cjs"
+  },
+  "devDependencies": { "playwright": "1.62.1" }
+}

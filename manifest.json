@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Reddit App Nag Blocker",
+  "version": "1.0.1",
+  "description": "Removes Reddit's install-the-app overlays and releases their page scroll lock.",
+  "content_scripts": [{
+    "matches": ["https://reddit.com/*", "https://www.reddit.com/*", "https://new.reddit.com/*", "https://old.reddit.com/*", "https://sh.reddit.com/*", "https://m.reddit.com/*"],
+    "js": ["content.js"],
+    "run_at": "document_start"
+  }]
+}
